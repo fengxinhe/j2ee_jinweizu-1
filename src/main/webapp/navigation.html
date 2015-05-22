@@ -1,0 +1,44 @@
+<html lang="zh-cn">
+<head>
+<meta http-equiv="content-type" content="text/html;charset=utf-8">
+<script src="js/jquery-2.1.4.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script type="text/javascript" src="js/checkCity.js"></script>
+<link rel="stylesheet" type="text/css" href="css/navigation.css">
+<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+<style type="text/css">
+body {
+	background-image: url(image/bg_navigation.jpg);
+	background-position: center;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: cover;
+}
+</style>
+<title>Bootstrap 101 Template</title>
+</head>
+<body>
+	<form action="index.html">
+		<div class="col-xs-1">
+			<select class="form-control input-lg" id="province">
+				<option selected="selected">上海市</option>
+			</select>
+		</div>
+		<div class="col-xs-1">
+			<select class="form-control input-lg" id="province"
+				onchange="if(this.value != '') setCity(this.options[this.selectedIndex].value);">
+				<option value="">-请选择-</option>
+				<option value="嘉定区">嘉定区</option>
+				<option value="杨浦区">杨浦区</option>
+			</select>
+
+		</div>
+		<div class="col-xs-2">
+
+			<select class="form-control input-lg" id="city">
+			</select>
+		</div>
+		<input class="btn btn-lg" type="submit" value="Go!" id="button">
+	</form>
+</body>
+</html>
