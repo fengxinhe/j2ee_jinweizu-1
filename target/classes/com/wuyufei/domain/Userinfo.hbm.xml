@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated 2015-5-21 14:23:56 by Hibernate Tools 4.0.0 -->
+<hibernate-mapping>
+    <class name="com.wuyufei.domain.Userinfo" table="userinfo" catalog="db">
+        <id name="username" type="string">
+            <column name="username" length="10" />
+            <generator class="assigned" />
+        </id>
+        <property name="password" type="string">
+            <column name="password" length="10" />
+        </property>
+    </class>
+</hibernate-mapping>

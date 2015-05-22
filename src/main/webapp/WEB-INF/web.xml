@@ -10,8 +10,18 @@
   	<description></description>
   	<servlet-class>edu.wuyufei.bean.example</servlet-class>
   </servlet>
+  <servlet>
+  	<servlet-name>DoRegServlet</servlet-name>
+  	<display-name>DoRegServlet</display-name>
+  	<description></description>
+  	<servlet-class>com.wuyufei.domain.DoRegServlet</servlet-class>
+  </servlet>
   <servlet-mapping>
   	<servlet-name>example</servlet-name>
   	<url-pattern>/example</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>DoRegServlet</servlet-name>
+  	<url-pattern>/DoRegServlet</url-pattern>
   </servlet-mapping>
 </web-app>
