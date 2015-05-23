@@ -36,18 +36,27 @@ public class DoRegServlet extends HttpServlet {
 		session = HibernateUtil.getSessionFactory().openSession();
 		
 		String hql = "from Userinfo b where b.username = 'wuyufei'";
+		String hql2 = "from HotNews h order by h.id desc";
 		List<Userinfo> bs = new ArrayList<Userinfo>();
+		List<HotNews> hn = new ArrayList<HotNews>();
+		List<HotNews> s = new ArrayList<HotNews>();
 		bs = session.createQuery(hql).list();
-		if(bs.size() != 0){
+		hn = session.createQuery(hql2).list();
+//		System.out.println(hn.get(0).getUrl());
+		if(hn.size() != 0){
 			Userinfo b = (Userinfo)bs.get(0);
+			for(int i = 0;i < 7;i++){     //retrieve the first 7 urls
+				s.add((HotNews)hn.get(i));
+			}
 			String username = b.getUsername();
 			String password = b.getPassword();
 			request.setAttribute("name", username);
 			request.setAttribute("psd", password);
+			request.setAttribute("url", s);
 		}
 		
 		session.close();
-		RequestDispatcher d = request.getRequestDispatcher("jsp/TestHibernate.jsp");
+		RequestDispatcher d = request.getRequestDispatcher("jsp/index.jsp");
 		d.forward(request, response);	}
 
 	/**

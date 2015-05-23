@@ -50,11 +50,14 @@ function setSelectOption(selectObj, optionList, firstOption, selected) {
 }
 var cityArr = [];
 cityArr['嘉定区'] = [ {
-	txt : '同济大学',
-	val : '同济大学'
+	txt : '同济大学嘉定校区',
+	val : '同济大学嘉定校区'
 }, {
-	txt : '嘉定小学',
-	val : '嘉定小学'
+	txt : '上海大学嘉定校区',
+	val : '上海大学嘉定校区'
+}, {
+	txt : '上海科技干部管理学院',
+	val : '上海科技干部管理学院'
 },
 
 ];

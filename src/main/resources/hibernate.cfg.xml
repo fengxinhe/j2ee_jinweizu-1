@@ -10,7 +10,7 @@
   <property name="hibernate.connection.pool_size">1</property>
   <property name="hibernate.current_session_context_class">jta</property>
   <property name="hibernate.hbm2ddl.auto">update</property>
-  <mapping class="com.wuyufei.domain.Userinfo"/>
   <mapping resource="com/wuyufei/domain/Userinfo.hbm.xml"/>
+  <mapping resource="com/wuyufei/domain/HotNews.hbm.xml"/>
  </session-factory>
 </hibernate-configuration>
