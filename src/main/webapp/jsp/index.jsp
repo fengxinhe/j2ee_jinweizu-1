@@ -1,5 +1,5 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
-    pageEncoding="UTF-8"%>
+	pageEncoding="UTF-8"%>
 <%@page import="com.wuyufei.domain.HotNews"%>
 <%@page import="java.util.ArrayList"%>
 <%
@@ -30,16 +30,16 @@
 	<div class="wrap">
 		<div class="sidebar">
 			<header>
-				<div class="logo">
-					<a href="index.html" title="Mad"> </a>
-				</div>
-				<div class="clearFloat"></div>
-				<div class="search-box">
-					<form action="#">
-						<input type="text"> <input type="submit" value="">
-					</form>
-				</div>
-				<div class="clearFloat"></div>
+			<div class="logo">
+				<a href="index.html" title="Mad"> </a>
+			</div>
+			<div class="clearFloat"></div>
+			<div class="search-box">
+				<form action="#">
+					<input type="text"> <input type="submit" value="">
+				</form>
+			</div>
+			<div class="clearFloat"></div>
 			</header>
 			<div class="widget">
 				<h1>推荐菜单</h1>
@@ -86,13 +86,8 @@
 							src=<%=list.get(2).getUrl()%> width="570" height="270"
 							alt="Slide 3"> </a> <a href="" title="123" target="_blank"><img
 							src=<%=list.get(3).getUrl()%> width="570" height="270"
-							alt="Slide 4"> </a> <a href="" title="123" target="_blank"><img
-							src=<%=list.get(4).getUrl()%> width="570" height="270"
-							alt="Slide 5"> </a> <a href="" title="123" target="_blank"><img
-							src=<%=list.get(5).getUrl()%> width="570" height="270"
-							alt="Slide 6"> </a> <a href="" title="123" target="_blank"><img
-							src=<%=list.get(6).getUrl()%> width="570" height="270"
-							alt="Slide 7"> </a>
+							alt="Slide 4">
+						</a>
 					</div>
 					<a href="#" class="prev"><img src="images/index/arrow-prev.png"
 						width="24" height="43" alt="Arrow Prev"></a> <a href="#"
@@ -399,12 +394,12 @@
 
 			<div class="clearFloat"></div>
 			<footer>
-				<div class="about">
-					<div class="title">About Us</div>
+			<div class="about">
+				<div class="title">About Us</div>
 
-				</div>
+			</div>
 
-				<div class="clearFloat"></div>
+			<div class="clearFloat"></div>
 
 			</footer>
 		</div>

@@ -5,13 +5,23 @@
 <web-app>
 	<display-name>Archetype Created Web Application</display-name>
 	<servlet>
-		<servlet-name>DoRegServlet</servlet-name>
-		<display-name>DoRegServlet</display-name>
+		<servlet-name>DoReady</servlet-name>
+		<display-name>DoReady</display-name>
 		<description></description>
-		<servlet-class>com.wuyufei.domain.DoRegServlet</servlet-class>
+		<servlet-class>com.wuyufei.domain.DoReady</servlet-class>
+	</servlet>
+	<servlet>
+		<servlet-name>LoginConf</servlet-name>
+		<display-name>LoginConf</display-name>
+		<description></description>
+		<servlet-class>com.wuyufei.login.LoginConf</servlet-class>
 	</servlet>
 	<servlet-mapping>
-		<servlet-name>DoRegServlet</servlet-name>
-		<url-pattern>/DoRegServlet</url-pattern>
+		<servlet-name>DoReady</servlet-name>
+		<url-pattern>/DoReady</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>LoginConf</servlet-name>
+		<url-pattern>/LoginConf</url-pattern>
 	</servlet-mapping>
 </web-app>
