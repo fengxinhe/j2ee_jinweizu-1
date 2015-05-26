@@ -18,27 +18,32 @@ body {
 <title>爱食堂</title>
 </head>
 <body>
-	<form action="DoReady">
-		<div class="col-xs-1">
+<div id="wrap">
+<div id="top">爱食堂 ：D</div>
+<div id="content">
+
+<div class="form">
+	<form action="DoReady" class="search_form">
+		
 			<select class="form-control input-lg" id="province">
 				<option selected="selected">上海市</option>
 			</select>
-		</div>
-		<div class="col-xs-1">
-			<select class="form-control input-lg" id="province"
+		
+		    <select class="form-control input-lg" id="province2"
 				onchange="if(this.value != '') setCity(this.options[this.selectedIndex].value);">
 				<option value="">-请选择-</option>
 				<option value="嘉定区">嘉定区</option>
 				<option value="杨浦区">杨浦区</option>
 			</select>
 
-		</div>
-		<div class="col-xs-2">
-
 			<select class="form-control input-lg" id="city">
+			<option value="tongji">tongji</option>
 			</select>
-		</div>
-		<input class="btn btn-lg" type="submit" value="Go!" id="button">
+	
+		   <input class="btn btn-lg" type="submit" value="Go!" id="button">
 	</form>
+</div>
+</div>
+</div>
 </body>
 </html>

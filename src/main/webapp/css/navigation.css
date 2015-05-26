@@ -1,24 +1,80 @@
+#wrap{
+	width: 100%;
+	margin: 0 auto;
+}
+#content{
+	position: absolute;
+	width: 400px;
+	top:50%;
+	left: 30%;
+	text-align: center;
+}
+#top{
+	position: absolute;
+	width: 400px;
+	top:20%;
+	left: 40%;
+	text-align: center;
+	font-size: 80px;
+	color: #fff;
+}
+.form{
+	width: 60%;
+	
+	position: absolute;
+}
+.form form{
+		
+	opacity: 0.8;
+
+}
+
+.search_form{
+
+}
+
 #province{
-	left: 390px;
-	top: 280px;
-	position:absolute;
-	opacity: 0.7;
+	position: absolute;
+	left: 0px;
+	width: 180px;
+	padding: 23px;
+	font-size: 20px;
+	outline: none;
+	border: none;
+	background: #fff;
+	margin: 0px;
+border-radius: 1px; 
+
 }
-#city{
-	left:398px;
-	top:280px;
-	position:absolute;
-	opacity: 0.7;
+#province2{	
+	width: 180px;
+    position: absolute;
+    left: 184px;
+	padding: 23px;
+	font-size: 20px;
+	outline: none;
+	border: none;
+	background: #fff;
+	margin: 0px;
+	border-radius: 1px; 
 }
-#university{
-	left: 405px;
-	top: 280px;
-	position:absolute;
-	opacity: 0.7;
+#city{	
+	width: 240px;
+position: absolute;
+	padding: 23px;
+    left: 368px;
+	font-size: 20px;
+	outline: none;
+	border: none;
+	background: #fff;
+	margin: 0px;
+	border-radius: 1px; 
 }
+
 #button{
-	left: 835px;
-	top: 280px;
-	position:absolute;
-	opacity: 0.7;
+	position: absolute;
+	left: 608px;
+	background: #FF6000;
+	opacity: 0.8;
+	border-radius: 1px; 
 }
