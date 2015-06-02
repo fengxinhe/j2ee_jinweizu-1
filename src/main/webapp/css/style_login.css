@@ -28,12 +28,15 @@ img{max-width:100%;}
 
 }
 body{
-	background:#FF6600;
- 	font-family: 'Open Sans', sans-serif;
-
+	background-image: url(../images/bgmohu.jpg);
+	background-position: center;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: cover;
+ 	 font-family: 'nexa_lightregular';
+    color:#ffffff;
 }
 .login-form {
-	background:#eee;
 	width: 26%;
 	margin:9% auto 4% auto;
  	position: relative;
@@ -45,8 +48,8 @@ body{
 
 .head {
 	position: absolute;
-	top:-15%;
-	left: 35%;
+	top:-20%;
+	left: 31%;
 }
 .head img {
 	border-radius:50%;
@@ -57,10 +60,11 @@ body{
 }
 .main{
 	position:relative;
+	margin-top:20%;
 }
 .main h1{
 	font-size:25px;
-	color:#676767;
+	color:#ffffff;
 	font-family: 'Open Sans', sans-serif;
 	font-weight:400;
 	padding-top: 19%;
@@ -75,7 +79,7 @@ body{
 text-align: center;
 }
 .main form p a {
-	color: #888;
+	color: #ffffff;
 	font-family: 'Open Sans', sans-serif;
 }
 form p a:hover {
@@ -86,10 +90,10 @@ form p a:hover {
 	position: relative;
 	width:92%;
 	padding:3%;
-	background:#D3D3D3;
+	background:transparent;
 	margin-bottom: 6%;
 	font-family: 'Open Sans', sans-serif;
-	color: #636363;
+	color: #ffffff;
 	font-weight:600;
 	font-size: 16px;
 	outline: none;
@@ -98,6 +102,7 @@ form p a:hover {
 	border:1px solid #DED6D6;
 	-webkit-appearance:none;
 }
+
  input[type="text"]:hover, input[type="password"]:hover{
  	border:1px solid #949494;
 	transition:0.5s;
